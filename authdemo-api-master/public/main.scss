@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+$baseline: 1.5rem;
+
+body {
+    margin: 0;
+    background: #eee;
+    height: 100vh;
+    display: flex;
+    font-family: 'PT Sans', sans-serif;
+
+    .login {
+        width: 16rem;
+        background: rgba(0, 0, 0, .2);
+        padding: 0rem;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: $baseline;
+        grid-gap: 1px;
+        box-shadow: 0 0 2rem rgba($color: #000000, $alpha: .2);
+
+        figure {
+            grid-row: 1/9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+
+            figcaption {
+                font-size: 1.4rem;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5rem 0;
+            }
+        }
+        input {
+            border: none;
+            appearance: none;
+            padding: 1rem;
+            font-size: 1rem;
+
+            &.username {
+                grid-row: 9/11;
+            }
+
+            &.password {
+                grid-row: 11/13;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .btn {
+            background: rgb(25, 170, 115);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 13/16;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+
+}

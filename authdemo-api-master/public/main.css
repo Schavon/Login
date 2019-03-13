@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+body {
+  margin: 0;
+  background: #eee;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body .login {
+  width: 16rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-auto-rows: 1.5rem;
+  grid-gap: 1px;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+body .login figure {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 8;
+  grid-row: 1/9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login figure img {
+  width: 50%;
+}
+
+body .login figure figcaption {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 0;
+}
+
+body .login input {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+body .login input.username {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  grid-row: 9/11;
+}
+
+body .login input.password {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 2;
+  grid-row: 11/13;
+}
+
+body .login input:focus {
+  outline: none;
+}
+
+body .login .btn {
+  background: #19aa73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 3;
+  grid-row: 13/16;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
